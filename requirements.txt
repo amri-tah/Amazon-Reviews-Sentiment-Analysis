@@ -2,6 +2,8 @@ streamlit
 nltk
 numpy
 pandas
-pickle
-re
+wordcloud
+regex
 plotly
+requests
+beautifulsoup4
