@@ -2,9 +2,9 @@ import streamlit as st
 import pandas as pd
 import pickle
 import re
+import nltk
 nltk.download('stopwords')
 from nltk import word_tokenize
-import nltk
 from nltk.stem import PorterStemmer, WordNetLemmatizer
 import plotly.graph_objs as go
 import reviewscrapper
