@@ -6,8 +6,10 @@ This project focuses on sentiment analysis using machine learning and natural la
 
 ## Project Structure
 
-- **B8_Amazon**: Contains Jupyter notebooks with exploratory data analysis and model development.
+- **notebooks**: Contains Jupyter notebooks with exploratory data analysis and model development.
 - **reviewscrapper.py**: Includes Python scripts for web scraping reviews for a certain URL.
+- **scrappedReviews.csv**: The reviews scrapped by "reviewscrapper.py" gets stored here.
+- **multiple_review_test.csv**: Test file to test out sentiment analysis for multiple reviews.
 - **review_analyzer.py**: Houses the Streamlit app code for interactive sentiment analysis.
 - **models.p**: Stores serialized models for sentiment analysis.
 - **requirements.txt**: Lists the project dependencies for reproducibility.
@@ -40,7 +42,7 @@ This project focuses on sentiment analysis using machine learning and natural la
 
 ## Usage
 
-1. Explore and run Jupyter notebook `B8_Amazon.ipynb` folder for data analysis and model development.
+1. Explore and run Jupyter notebook `B8_Amazon.ipynb` in the `notebooks` folder for data analysis and model development.
 
 2. Execute Python scripts in the `reviewscrapper.py` for web scraping.
 
