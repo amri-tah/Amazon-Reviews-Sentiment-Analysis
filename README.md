@@ -7,26 +7,26 @@ This project focuses on sentiment analysis using machine learning and natural la
 ## Project Structure
 
 - **notebooks**: Contains Jupyter notebooks with exploratory data analysis and model development.
+- **test files**: Contains test files to test out sentiment analysis for multiple reviews.
+- **models.p**: Stores serialized models for sentiment analysis.
+- **review_analyzer.py**: Houses the Streamlit app code for interactive sentiment analysis.
 - **reviewscrapper.py**: Includes Python scripts for web scraping reviews for a certain URL.
 - **scrappedReviews.csv**: The reviews scrapped by "reviewscrapper.py" gets stored here.
-- **multiple_review_test.csv**: Test file to test out sentiment analysis for multiple reviews.
-- **review_analyzer.py**: Houses the Streamlit app code for interactive sentiment analysis.
-- **models.p**: Stores serialized models for sentiment analysis.
 - **requirements.txt**: Lists the project dependencies for reproducibility.
-- **config.toml**: Configuration for the Streamlit app theme.
-
+- **.streamlit**: Contains the configuration for the streamlit app's theme
+  
 ## Setup
 
 1. Clone the repository:
 
     ```bash
-    git clone https://github.com/amri-tah/Amazon-Review-Sentiment-Analysis.git
+    git clone https://github.com/amri-tah/Amazon-Reviews-Sentiment-Analysis.git
     ```
 
 2. Navigate to the project directory:
 
     ```bash
-    cd Amazon-Review-Sentiment-Analysis
+    cd Amazon-Review-Sentiments-Analysis
     ```
 
 3. Install dependencies:
