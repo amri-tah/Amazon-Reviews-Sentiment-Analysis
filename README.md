@@ -52,5 +52,7 @@ This project focuses on sentiment analysis using machine learning and natural la
     streamlit run review_analyzer.py
     ```
 
+## Screenshots
+
 
 
