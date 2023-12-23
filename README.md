@@ -54,5 +54,21 @@ This project focuses on sentiment analysis using machine learning and natural la
 
 ## Screenshots
 
+### Amazon Reviews Dataset Word Cloud:
+![](screenshots/wordcloud.png)
 
+### Data Analysis:
+![](screenshots/no-of-chars.jpg)
+![](screenshots/no-of-words.jpg)
 
+### Streamlit App:
+#### Single Reviews:
+![](screenshots/single-review.jpg)
+
+#### Product URL Reviews:
+![](screenshots/url-review-1.jpg)
+![](screenshots/url-review-2.jpg)
+
+#### Multi Review:
+![](screenshots/multi-review-1.jpg)
+![](screenshots/multi-review-2.jpg)
