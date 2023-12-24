@@ -15,12 +15,12 @@ The Amazon reviews full score dataset is constructed by randomly taking 6,00,000
 
 - **notebooks**: Contains Jupyter notebooks with exploratory data analysis and model development.
 - **test files**: Contains test files to test out sentiment analysis for multiple reviews.
+- **.streamlit**: Contains the configuration file for the streamlit app's theme
 - **models.p**: Stores serialized models for sentiment analysis.
 - **review_analyzer.py**: Houses the Streamlit app code for interactive sentiment analysis.
 - **reviewscrapper.py**: Includes Python scripts for web scraping reviews for a certain URL.
-- **scrappedReviews.csv**: The reviews scrapped by "reviewscrapper.py" gets stored here.
 - **requirements.txt**: Lists the project dependencies for reproducibility.
-- **.streamlit**: Contains the configuration for the streamlit app's theme
+
   
 ## Setup
 
