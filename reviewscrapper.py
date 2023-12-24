@@ -18,7 +18,8 @@ def scrap_page(reviews_url):
         df_reviews = pd.DataFrame(reviews)
     df_reviews["Review"] = df_reviews["Title"]+ df_reviews["Description"]
     df_reviews = df_reviews[["Review", "Stars"]]
-    df_reviews.to_csv('scrapedReviews.csv', index=False)
+    return df_reviews
+    # df_reviews.to_csv('scrapedReviews.csv', index=False)
 
 
 def reviewsHtml(url):
@@ -109,6 +110,6 @@ def web_scrapper(inp):
         product_url, product_id = match.groups()
         reviews_url = f"{product_url}/product-reviews/{product_id}/"
         print(reviews_url)
-        scrap_page(reviews_url)
+        return scrap_page(reviews_url)
     else:
         print("Invalid URL format")
