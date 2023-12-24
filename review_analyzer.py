@@ -10,7 +10,7 @@ from nltk.corpus import stopwords
 from nltk import word_tokenize
 from nltk.stem import PorterStemmer, WordNetLemmatizer
 import plotly.graph_objs as go
-from reviewscrapper import webscrapper
+import reviewscrapper 
 import matplotlib.pyplot as plt
 from wordcloud import WordCloud
 
