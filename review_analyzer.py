@@ -8,9 +8,9 @@ nltk.download('punkt')
 nltk.download('wordnet')
 from nltk.corpus import stopwords
 from nltk import word_tokenize
-from nltk.stem import PorterStemmer, WordNetLemmatizer
+from nltk.stem import WordNetLemmatizer
 import plotly.graph_objs as go
-import reviewscrapper 
+from reviewscrapper import *
 import matplotlib.pyplot as plt
 from wordcloud import WordCloud
 
@@ -30,13 +30,9 @@ def preprocess_text(text):
     # Tokenize
     tokens = nltk.word_tokenize(text)
 
-    # Stemming
-    stemmer = PorterStemmer()
-    stemmed_tokens = [stemmer.stem(token) for token in tokens]
-
     # Lemmatize
     lemmatizer = WordNetLemmatizer()
-    lem_tokens = [lemmatizer.lemmatize(token) for token in stemmed_tokens]
+    lem_tokens = [lemmatizer.lemmatize(token) for token in tokens]
     
     return ' '.join(lem_tokens)
 
@@ -144,10 +140,10 @@ if __name__ == "__main__":
     st.subheader('Check sentiments of an Amazon product:')
     url_review = st.text_input("Enter the URL to the product:")
     if st.button('Check the reviews!'):
-        reviewscrapper.web_scrapper(url_review)
+        df_reviews = web_scrapper(url_review)
 
-        url_rev = pd.read_csv("scrapedReviews.csv")
-        classify_multiple(pd.DataFrame(url_rev["Review"]))
+        # url_rev = pd.read_csv("scrapedReviews.csv")
+        classify_multiple(pd.DataFrame(df_reviews["Review"]))
 
         
     else:
