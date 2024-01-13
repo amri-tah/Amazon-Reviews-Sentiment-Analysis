@@ -1,2 +1,3 @@
 *.p filter=lfs diff=lfs merge=lfs -text
 models.p filter=lfs diff=lfs merge=lfs -text
+*.ipynb linguist-vendored
